@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: gray;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(Asset/homepage1.jpg);
+    background-size: cover;
+    background-position: center;  
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan opasitas */
+    /* -webkit-backdrop-filter: blur(20px); Untuk dukungan browser Safari */
+    border: 2px solid rgba(255, 255, 255, 0.486);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    margin-top: 80px;
+    color: white;
+}
+
+.container .title h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container .title h1:before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    /* background: #9b59b6; */
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+    margin: 20px 0 12px 0;  
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    padding-left: 15px;
+    font-size: 16px;
+    letter-spacing: normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.user-details .input-box input:focus, .user-details .input-box input:focus{
+    border-color: #ffffff;
+    border-width: 3px;
+    background: #cecece;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+ }
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 30%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 7px;
+    border-radius: 5px solid;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border: 5px solid;
+    border-color: #d9d9d9;
+    background: black;
+}   
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #4f3d04;
+    background: #ffd859;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form .button input:hover{
+    background: #b99a35;
+    color: #fff0be;
+    cursor: pointer;
+}
+
+.container .log p{
+    font-size: small;
+    color: rgb(255, 81, 81);
+    /* color: white; */
+    font-family: "Poppins", sans-serif;
+}
+
+.container .log{
+    /* background-color: wheat; */
+    margin-top: 15px;
+    right: 10px;
+}
+
+
+/* Tablet */
+@media (max-width: 769px) {
+    .container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 550px;
+    }
+
+    form .user-details .input-box{
+        margin-top: 17px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container .form-container{
+        padding-top: 10px;
+    }
+
+    form .user-details .input-box input{
+        margin-bottom: -10px;
+        font-size: 13px;
+        height: 38px;
+    }
+    
+    form .gender-details .category{
+        margin-top: 10px;
+        width: 10%;
+    }
+
+    .gender-details .category label{
+        margin-top: -7px;
+    }
+
+    form .gender-details .category span{
+        margin-right: 10px;
+    }
+
+    .container form .gender-title{
+        font-size: 17px;
+    }
+    
+    .container .form-container form .gender-details{
+        margin-top: 17px;
+    }
+
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+        padding-right: 10px;
+    }
+    
+    .user-details::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .user-details::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 25px;
+    }
+
+    .user-details::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 25px;
+    }
+
+    .user-details::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+/* mobile L */
+@media (max-width: 650px){
+    .container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 450px;
+        max-width: 300px; 
+    }
+
+    .container .title h1{
+        width: 245px;
+        position: fixed;
+        font-size: 20px;
+        font-weight: 300;
+        z-index: 1;
+    }
+
+    .container form{
+        font-size: 12px;
+    }
+
+    .container form .gender-title{
+        font-size: 12px;
+    }
+
+    .container form .user-details{
+        flex-wrap: nowrap;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    form .user-details .input-box{
+        margin-top: 17px;
+        width: 100%;
+    }
+
+    .user-details .input-box input{
+        padding-left: 10px;
+    }
+
+    .container .form-container{
+        padding-top: 30px;
+    }
+
+    .container .form-container form .gender-details{
+        margin-top: 17px;
+    }
+
+    .gender-details .category label{
+        margin-right: 20px;
+        margin-top: -7px;
+    }
+
+    .gender-details .category .dot{
+        height: 13px;
+        width: 13px;
+    }
+
+    #dot-1:checked ~ .category label .one,
+    #dot-2:checked ~ .category label .two{
+        border: 3px solid;
+    }   
+
+    .container .form-container form .gender-details input{
+        margin-top: 15px;
+    }
+
+    .container form .user-details input{
+        width: 223px;
+        margin-bottom: -50px;
+        height: 35px;
+    }
+
+    .container form .button{
+        height: 30px;
+    }
+
+    .container form .button input{
+        font-size: 15px;
+    }
+
+    .container .log p{
+        font-size: 11px;
+        margin-bottom: -7px;
+    }
+    
+    .container .log{
+        right: 10px;
+    }
+}
+
+/* Mobile M & Mobile S */
+@media (max-width: 376px) {
+    .container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 250px;
+        height: 400px;
+        max-width: 300px; 
+    }
+
+    .container .title h1{
+        font-size: 17px;
+    }
+
+    .container form{
+        font-size: 10px;
+    }
+
+    .container .form-container{
+        padding-top: 25px;
+    }
+
+    .container form .user-details input{
+        width: 177px;
+        margin-bottom: -20px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .user-details .input-box input{
+        padding-left: 8px;
+    }
+
+    .container form .user-details{
+        height: 255px;
+    }
+
+    .container form .button input{
+        font-size: 13px;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+}

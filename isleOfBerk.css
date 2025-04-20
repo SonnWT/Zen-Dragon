@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    /* background-color: #0f1115; */
+    /* background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.4)), url(Asset/night-sky.jpg); */
+}
+
+.wrapper-content1{
+    /* background-color: wheat; */
+    /* padding-left: 7%; */
+    /* height: 75%; */
+    /* width: 50%; */
+}
+
+.content1{
+    width: 100%;
+    height: 125vh;
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(Asset/IsleOfBerk/isle-of-berk-at-night.jpg); */
+    background-image: url(Asset/IsleOfBerk/isle\ of\ berk\ \(1\).jpg);
+    background-size: cover;
+    background-position: left;  
+    justify-content: right;
+    align-items: flex-start;
+    display: flex;
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+}
+
+.title{
+    /* width: 100%; */
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0.141), #00000021, #00000018, #00000009, #00000000); */
+    border-radius: 20px;
+    padding: 0 10px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-right: 200px;
+}
+
+.title h1{
+    /* background: linear-gradient(to top, #084e10, #084e10, #42cb64); */
+    /* background: linear-gradient(to top, #f6452e, #ff9636, #ffd859, #ffd859, #ffd859); */
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    /* color: rgb(10, 44, 75); */
+    color: #52764b;
+    font-size: 100px;
+    font-family: "Grenze Gotisch", serif;
+    text-align: center;
+    filter: drop-shadow(0 0 0.25rem #fdfdfd);
+}
+
+.title p{
+    font-size: 19px;
+    color: #52764b;
+    filter: drop-shadow(0 0 0.25rem #fdfdfd);
+}
+
+.title img{
+    width: 50%;
+}
+
+.content2{
+    position: relative;
+    background-color: wheat;
+    padding-bottom: 10%;
+}
+
+.content2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./Asset/IsleOfBerk/texture2.jpg) repeat center;
+    mix-blend-mode: multiply;
+}
+
+.judulStory{
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+
+.content2 .container .titleBawah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #31363f; */
+}
+
+.content2 .container .titleBawah img{
+    width: 60%;
+}
+
+.content2 .container .subtitleBawah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #b9c7e1; */
+    margin-bottom: 5%;
+}
+
+.content2 .container .subtitleBawah img{
+    width: 60%;
+}
+
+.container .paragraf{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: white; */
+}
+
+.container .foto{
+    display: flex;
+    width: 50%;
+    height: 40vh;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
+}
+
+.container .paragraf img{
+    /* height: 450px; */
+    height: 17%;
+    /* width: 45%; */
+    position: absolute;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.tulisan-kanan{
+    /* height: 300px; */
+    height: 35vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 100px;
+    color: rgb(73, 8, 8);
+    background: linear-gradient(to left, #65381a30, #65381a25, #65381a20, #65381a15, #65381a00);
+    border-radius: 20px;
+    padding-right: 30px;
+    flex-direction: column;
+}
+
+.container h1{
+    margin-bottom: 10px;
+    font-family: "Grenze Gotisch", serif;
+    font-size: 2.1em;
+}
+
+.container .titik2{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* background-color: #222831; */
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.container .titik2 .lurus, .container .titik2-2 .lurus{
+    display: none;
+}
+
+.container .titik2 .miring img, .container .titik2-2 .miring img{
+    width: 60%;
+}
+
+.container .titik2-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* background-color: #222831; */
+    transform: scaleY(-1);
+    filter: drop-shadow(10px -10px 10px rgba(0,0,0,0.6));
+}
+
+.tulisan-kiri{
+    height: 300px;
+    width: 600px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 100px;
+    color: rgb(73, 8, 8);
+    background: linear-gradient(to right, #65381a30, #65381a25, #65381a20, #65381a15, #65381a00);
+    border-radius: 20px;
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+.reveal{
+    transform:scale(0.1);
+    transition: all 1.5s ease;
+    opacity: 0;
+    position: relative;
+}
+
+.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.reveals{
+    transform:translateY(-150px);
+    transition: all 1.5s ease;
+    opacity: 0;
+    position: relative;
+}
+
+.actives{
+    opacity: 1;
+    transform:translateY(0px);
+}
+
+@media (max-width: 1244px)
+{
+    .content2 .container .paragraf .foto img{
+        width: 40%;
+        height: 50vh;
+    }
+
+    .title{
+        margin-right: 50px;
+    }
+
+    .title p{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1030px)
+{
+    .title{
+        justify-content: center;
+        margin-right: 40px;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 40vh;
+        width: 37%;
+    }
+
+    .tulisan-kanan{
+        margin-right: 50px;
+    }
+
+    .tulisan-kanan h1
+    {
+        font-size: 38px;
+    }
+
+    .tulisan-kanan p{
+        font-size: 19px;
+    }
+
+    .tulisan-kiri h1{
+        font-size: 38px;
+    }
+
+    .tulisan-kiri p{
+        font-size: 19px;
+    }
+
+    .container .titik2 img, .container .titik2-2 img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 975px)
+{
+    .title{
+        margin-right: 7px;
+    }
+
+    .title p{
+        width: 400px;
+    }
+
+    .title h1{
+        font-size: 90px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 924px)
+{
+    .tulisan-kanan{
+        margin-right: 30px;
+        height:30vh;
+    }
+
+    .tulisan-kiri{
+        height: 250px;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 35vh;
+        width: 35%;
+    }
+
+    .content1{
+        background-size: 1000px 125vh;
+        justify-content: right;
+    }
+
+    .title p{
+        width: 300px;
+    }
+}
+
+@media (max-width: 865px)
+{
+    .tulisan-kiri h1{
+        font-size: 38px;
+    }
+
+    .tulisan-kiri p{
+        font-size: 17px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 38px;
+    }
+
+    .tulisan-kanan p{
+        font-size: 17px;
+    }
+
+    .tulisan-kanan{
+        margin-right: 23px;
+        height: 29vh;
+    }
+
+    .tulisan-kiri{
+        height: 210px;
+        margin-left: 22px;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 36vh;
+        width: 37%;
+    }
+
+    .title h1{
+        font-size: 77px;
+    }
+
+    .title{
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 820px)
+{
+    .tulisan-kiri h1{
+        font-size: 35px;
+    }
+
+    .tulisan-kiri p{
+        font-size: 16px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 35px;
+    }
+
+    .tulisan-kanan p{
+        font-size: 16px;
+    }
+
+    .tulisan-kanan{
+        margin-right: 20px;
+        height: 28vh;
+    }
+
+    .tulisan-kiri{
+        height: 200px;
+        margin-left: 20px;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 35vh;
+        width: 36%;
+    }
+
+    .container.paragraf{
+        justify-content: center;
+    }
+
+    .title h1{
+        font-size: 75px;
+    }
+
+    .title{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 770px)
+{
+    .title h1{
+        color: #ffffff;
+        filter: drop-shadow(0 0 0.25rem #666666);
+    }
+
+    .title p{
+        color: #ffffff;
+        filter: drop-shadow(0 0 0.25rem #666666);
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 30vh;
+        width: 35%;
+    }
+
+    .tulisan-kanan{
+        margin-right: 0px;
+        height: 25vh;
+        width: 40%;
+    }
+
+    .tulisan-kiri{
+        height: 150px;
+        margin-left: 20px;
+        width: 400px;
+    }
+
+    .tulisan-kiri h1{
+        font-size: 25px;
+    }
+
+    .tulisan-kiri p{
+        font-size: 14px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 25px;
+    }
+
+    .tulisan-kanan p{
+        font-size: 14px;
+    }
+
+    .content1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title p{
+        text-align: center;
+        padding-left: 30px;
+    }
+
+    .title{
+        margin-bottom: 190px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 635px)
+{
+    .content2 .container .paragraf .foto img{
+        height: 20vh;
+    }
+
+    .tulisan-kanan{
+        height: 33vh;
+        width: 40%;
+    }
+
+    .container .titik2 img{
+        height: 75px;
+    }
+
+    .container .titik2-2 img{
+        height: 75px;
+    }
+
+    .title p{
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 522px)
+{
+    .content2 .container .titleBawah img{
+        width: 80%;
+    }
+
+    .content2 .container .subtitleBawah img{
+        width: 70%;
+    }
+
+    .title p{
+        width: 250px;
+        padding-left: 15px;
+    }
+
+    .title h1{
+        font-size: 60px;
+    }
+
+    .tulisan-kiri h1{
+        font-size: 30px;
+    }
+
+    .tulisan-kiri p{
+        font-size: 13px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 30px;
+    }
+
+    .tulisan-kanan p{
+        font-size: 13px;
+    }
+
+    .tulisan-kanan{
+        width: 70%;
+        height: 75%;
+        background: linear-gradient(to top, #65381a30, #65381a25, #65381a20, #65381a15, #65381a00);
+        margin-top: -80px;
+        padding: 15px;
+    }
+
+    .tulisan-kiri{
+        background: linear-gradient(to top, #65381a30, #65381a25, #65381a20, #65381a15, #65381a00);
+        width: 70%;
+        height: 75%;
+        margin-top: -80px;
+        padding: 15px;
+    }
+
+    .container .paragraf{
+        flex-direction: column-reverse;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 28vh;
+        width: 50%;
+        margin-top: -90px;
+    }
+
+    .container .titik2 .lurus, .container .titik2-2 .lurus{
+        display: inline;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .container .titik2 .miring, .container .titik2-2 .miring{
+        display: none;
+    }
+
+    .content2 .container .section1{
+        flex-direction: column;
+    }
+
+    .content1{
+        background-size: 700px 125vh;
+    }
+}
+
+@media (max-width: 370px)
+{
+    .title{
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .content2 .container .paragraf .foto img{
+        height: 25vh;
+        width: 70%;
+        margin-top: -140px;
+    }
+
+    .tulisan-kanan{
+        margin-top: -110px;
+    }
+
+    .tulisan-kiri{
+        margin-top: -110px;
+    }
+
+    .tulisan-kiri h1{
+        font-size: 25px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 25px;
+    }
+
+    .title{
+        margin-left: 0;
+        margin-bottom: 250px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .title p{
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    .title h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 266px)
+{
+    .content2 .container .titleBawah img{
+        width: 85%;
+    }
+
+    .content2 .container .subtitleBawah img{
+        width: 75%;
+    }
+
+    .content2 .container .paragraf .foto img{
+        width: 90%;
+    }
+
+    .title p{
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .title h1{
+        font-size: 40px;
+    }
+
+    .tulisan-kiri h1{
+        font-size: 20px;
+    }
+
+    .tulisan-kanan h1{
+        font-size: 20px;
+    }
+}

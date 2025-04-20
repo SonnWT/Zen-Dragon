@@ -1,0 +1,435 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .content1{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(Asset/homepage1_.jpg);
+        background-size: cover;
+        background-position: center;  
+        justify-content: center;
+        align-items: center;
+        display: flex;  
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    .content1 .banner{
+        /* width: 700px; */
+        width: 60%;
+        height: 400px;
+        background-color: rgba(30, 29, 29, 0.4);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        border-radius: 10px;
+        color: #ffffff;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .content1 .banner .isi-banner .welcome-to{
+        font-size: 60px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+
+    .content1 .banner .isi-banner .zen-dragon{
+        background: linear-gradient(to top, #f6452e, #ff9636, #ffd859, #ffd859, #ffd859);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 80px;
+        font-family: "Grenze Gotisch", serif;
+        margin-top: -25px;
+    }
+
+    .content1 .banner .isi-banner p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    .content1 .banner .isi-banner h3{
+        background: linear-gradient(to top, #f6452e, #ff9636, #ffd859, #ffd859, #ffd859);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .wrapper-content2{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content2{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;  
+        background-size: cover;
+        background-position: center;  
+        justify-content: center;
+        align-items: center;
+        display: flex;  
+        flex-direction: column;
+        background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.4)), url(Asset/homepage2.jpg);
+    }
+
+    .content2 .banner2 p{
+        font-size: 17px;
+    }
+
+    .judul-content2{
+        background: linear-gradient(to top, #f6452e, #ff9636, #ffd859, #ffd859, #ffd859);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 500;
+        font-size: 80px;
+        font-family: "Grenze Gotisch", serif;
+    }
+
+    .wrapper-content2 .content2 img{
+        height: 10%;
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .content2 .banner2{
+        width: 1000px;
+        height: 250px;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+
+    .banner2 h1{
+        color: #ffd859;
+        margin-bottom: 15px;
+    }
+
+    .content2 .banner2 .benefit{
+        width: 270px;
+        height: 250px;
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
+        background-color: rgba(132, 131, 131, 0.3);
+        border-radius: 25px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        transition: 0.5s ease;
+    }
+
+    .content2 .banner2 .benefit:hover{
+        transform: translateY(-7px);
+        background-color: rgba(132, 131, 131, 0.5);
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.9);
+    }
+
+    .mission-container{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        background-size: cover;
+        background-position: center;  
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .mission-container p{
+        color: white;
+        font-size: 25px;
+    }
+
+    .reveal{
+        transform:scale(0.1);
+        transition: all 1.5s ease;
+        opacity: 0;
+        position: relative;
+    }
+
+    .active{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .reveals{
+        transform:translateY(150px);
+        transition: all 1.5s ease;
+        opacity: 0;
+        position: relative;
+    }
+
+    .actives{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+
+    @media (max-width: 1005px) {
+        .content2 .banner2{
+            width:770px;
+        }
+
+        .content2 .banner2 .benefit{
+            margin-right: 13px;
+        }
+
+        .content2 .banner2 h1 {
+            font-size: 20px;
+        }
+
+        .content2 .judul-content2{
+            font-size: 70px;
+        }
+    }
+
+    /* content1 (tablet)*/
+    @media (max-width: 821px) {
+        .content1 .banner .isi-banner .welcome-to{
+            font-size: 40px;
+            font-weight: 400;
+        }
+        
+        .content1 .banner .isi-banner p{
+            font-weight: 100;
+            line-height: 25px;
+            font-size: 15px;
+        }
+        
+        .content1 .banner .isi-banner h3{
+            font-size: 17px;
+        }
+
+        .content1 .banner .isi-banner .zen-dragon{
+            margin-top: 5px;
+            font-size: 55px;
+        }
+    }
+
+    /* content2 (tablet) */
+    @media (max-width: 821px) { 
+        .content2 .banner2{
+            width: 300px;
+            height: 500px;
+            flex-direction:column; 
+        }
+
+        .content2 .banner2 .benefit {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .content2 .banner2 h1 {
+            font-size: 20px;
+        }
+        .content2 .banner2 p {
+            font-size: 14px;
+        }
+
+        .wrapper-content2 .bg-content2{
+            width: 400px;
+            height: 710px;
+        }
+
+        .content2 .judul-content2{
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+    }
+
+    /* our mission (tablet) */
+    @media (max-width: 820px) {
+        .mission-container h1{
+            font-size: 60px;
+        }
+
+        .mission-container p{
+            font-size: 15px;
+        }
+
+        .mission-container{
+            height: 120px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .wrapper-content2 .content2 img{
+            height: 5%;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .mission-container p{
+            font-size: 10px;
+        }  
+
+        .mission-container .judul-content2{
+            font-size: 35px;
+        }
+
+        .content2 .judul-content2{
+            font-size: 35px;
+            margin-top: 50px;
+        }
+    }
+
+    /* content1 (mobile)*/
+    @media (max-width: 426px) {
+        .content1 .banner .isi-banner .welcome-to{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        
+        .content1 .banner .isi-banner p{
+            font-weight: 100;
+            line-height: 25px;
+            font-size: 13px;
+        }
+        
+        .content1 .banner .isi-banner h3{
+            font-size: 13px;
+        }
+
+        .content1 .banner .isi-banner .zen-dragon{
+            margin-top: 5px;
+            font-size: 30px;
+        }
+    }
+
+    /* content2 (mobile)*/
+    @media (max-width: 426px) { 
+        .content2 .banner2{
+            width: 200px;
+            height: 400px;
+            flex-direction:column; 
+        }
+
+        .content2 .banner2 .benefit {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .content2 .banner2 h1 {
+            font-size: 12px;
+        }
+        .content2 .banner2 p {
+            font-size: 11px;
+        }
+
+        .wrapper-content2 .bg-content2{
+            width: 400px;
+            height: 710px;
+        }
+
+        .content2 .judul-content2{
+            font-size: 35px;
+        }
+
+        .wrapper-content2 .content2 img{
+            height: 5%;
+        }
+    }
+
+    /* our mission (mobile) */
+    @media (max-width: 426px) {
+        .mission-container h1{
+            font-size: 50px;
+        }
+
+        .mission-container p{
+            font-size: 13px;
+        }
+
+        .mission-container{
+            height: 115px;
+        }
+    }
+
+    /* header navbar (mobile) */
+    @media (max-width: 820px){
+        .header-navbar-conteiner .header{
+            height: 50px;
+        }
+        
+        .header-navbar-conteiner .navbar,
+        .header-navbar-conteiner .navbar ul li{
+            display: none;
+        }
+
+        .header-navbar-conteiner .navbar-img{
+            width: 100%;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #31363f;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-navbar-conteiner .navbar-img img{
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }   
+
+        .nav-img {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+        }
+        .nav-img a{
+            margin-right: 35px;
+        }
+
+        .header-navbar-conteiner .navbar-img a{
+            display: inline-block;
+        }
+
+        .header-navbar-conteiner .navbar-img .log{
+            margin-right: 30px;
+            background: linear-gradient(to top, #f6452e, #ff9636, #ffd859, #ffd859, #ffd859);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .header-navbar-conteiner .navbar-img .log .login2{
+            display: contents;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .header-navbar-conteiner .navbar-img .log .login2:focus{
+            color: white;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+
+@media (max-width: 345px)
+{
+    .wrapper-content2 .content2 img{
+        height: 3%;
+    }
+
+    .content2 .judul-content2{
+        font-size: 28px;
+    }
+}

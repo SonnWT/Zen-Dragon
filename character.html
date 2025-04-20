@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character</title>
+    <link rel="stylesheet" href="character.css">
+    <link rel="stylesheet" href="headerCharacter.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="Asset/logoBulatZenDragon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+    <script src="character.js" defer></script>
+</head>
+<body>
+    <div class="header-navbar-conteiner">
+        <div class="header">
+            <img class="besar" src="Asset/zendragonLogo.png">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="homepagee.html" class="navAll">HOME</a></li>
+                <li><a href="character.html" class="character">CHARACTER</a></li>
+                <li><a href="dragonClass.html" class="navAll">DRAGON CLASS</a></li>
+                <li><a href="isleOfBerk.html" class="navAll">ISLE OF BERK'S</a></li>
+            </ul>
+            <a href="login.html" class="login">LOGIN</a>
+        </div>
+
+        <div class="navbar-img">
+            <div class="nav-img">
+                <a href="homepagee.html"> <img src="Asset/homeIcon.png" class="homeImg"></a>
+                <a href="character.html"> <img class="characterIcon" src="Asset/characterIconWhite.png"></a>
+                <a href="dragonClass.html"> <img class="dragonClassIcon" src="Asset/dragonClassIcon2.png"></a>
+                <a href="isleOfBerk.html"> <img class="isleOfBerkIcon" src="Asset/isleOfBerkIcon.png"></a>
+            </div>
+            <div class="log">
+                <a href="login.html" class="login2">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="detail-atas">
+            <div class="control-atas">
+                <div class="tombol-atas">
+                    <button id="ragnar2" onclick="changeCharacter2('ragnar2')"><img src="Asset/Character/1.png"></button>
+                    <button id="freydis2" onclick="changeCharacter2('freydis2')"><img src="Asset/Character/2.png"></button>
+                </div>
+                <div class="tombol-atas">
+                    <button id="bjorn2" onclick="changeCharacter2('bjorn2')"><img src="Asset/Character/3.png"></button>
+                    <button id="olaf2" onclick="changeCharacter2('olaf2')"><img src="Asset/Character/4.png"></button>
+                </div>
+                <div class="tombol-atas">
+                    <button id="erik2" onclick="changeCharacter2('erik2')"><img src="Asset/Character/5.png"></button>
+                    <button id="leif2" onclick="changeCharacter2('leif2')"><img src="Asset/Character/6.png"></button>
+                </div>
+            </div>
+        </div>
+        <div class="section1">
+            <div id="image2" class="imagee">
+                <img id="img2" src="Asset/Character/ragnar.png">
+            </div>
+            <div class="character-desc">
+                <div class="char-desc">
+                    <div class="char-detail">
+                        <h1 class="name" id="name2">Ragnar Ironheart Stormborn</h1>
+                        <div class="desc">
+                            <h4 class="description1" id="description1a">Position: Professor</h4>
+                            <br>
+                            <p class="description2" id="description2a">Age: 55</p>
+                            <p class="description3" id="description3a">Zen Dragon merges Nordic valor with Eastern serenity, fostering balanced unity of body, mind, and spirit for greatness through meditation and simplicity.</p>
+                            <br>
+                            <p class="description4" id="description4a">Specialist skill: Dragon Tamer, skilled in understanding and communicating with dragons, able to establish a bond of trust and loyalty between the viking and their dragon companion.</p>
+                        </div>
+                    </div>
+                    <div class="achievement">
+                        <h1 id="achieve2">Achievements</h1>
+                        <br>
+                        <p class="achievement1" id="achievement1a">> Dragonlore Novice: Knows dragon behavior. <</p>
+                        <br>
+                        <p class="achievement2" id="achievement2a">> Elemental Awareness: Skilled with elemental energies. <</p>
+                        <br>
+                        <p class="achievement3" id="achievement3a">> Academic Distinction: Viking expert. <</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="detail">
+            <div class="control">
+                <div class="tombol">
+                    <button id="ragnar" onclick="changeCharacter('ragnar')"><img src="Asset/Character/1.png"></button>
+                    <button id="freydis" onclick="changeCharacter('freydis')"><img src="Asset/Character/2.png"></button>
+                </div>
+                <div class="tombol">
+                    <button id="bjorn" onclick="changeCharacter('bjorn')"><img src="Asset/Character/3.png"></button>
+                    <button id="olaf" onclick="changeCharacter('olaf')"><img src="Asset/Character/4.png"></button>
+                </div>
+                <div class="tombol">
+                    <button id="erik" onclick="changeCharacter('erik')"><img src="Asset/Character/5.png"></button>
+                    <button id="leif" onclick="changeCharacter('leif')"><img src="Asset/Character/6.png"></button>
+                </div>
+            </div>
+        </div>
+        <div id="image" class="imagee">
+            <img id="img" src="Asset/Character/ragnar.png">
+        </div>
+        <div class="character-desc">
+            <div class="char-desc">
+                <div class="char-detail">
+                    <h1 class="name" id="name">Ragnar Ironheart Stormborn</h1>
+                    <div class="desc">
+                        <h4 class="description1" id="description1">Position: Professor</h4>
+                        <br>
+                        <p class="description2" id="description2">Age: 55</p>
+                        <p class="description3" id="description3">Zen Dragon merges Nordic valor with Eastern serenity, fostering balanced unity of body, mind, and spirit for greatness through meditation and simplicity.</p>
+                        <br>
+                        <p class="description4" id="description4">Specialist skill: Dragon Tamer, skilled in understanding and communicating with dragons, able to establish a bond of trust and loyalty between the viking and their dragon companion.</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <h1 id="achieve">Achievements</h1>
+                    <br>
+                    <p class="achievement1" id="achievement1">> Dragonlore Novice: Knows dragon behavior. <</p>
+                    <br>
+                    <p class="achievement2" id="achievement2">> Elemental Awareness: Skilled with elemental energies. <</p>
+                    <br>
+                    <p class="achievement3" id="achievement3">> Academic Distinction: Viking expert. <</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section class="footer">
+            <div class="footer-content">
+                <div class="logo-detail">
+                    <img class="logo" src="Asset/zenDragonlogo2baris.png">
+                    <p class="detail gone">
+                        "Unleash the tranquility within, train with Zen Dragon!"
+                    </p>
+                </div>
+                <div class="footer-contents">
+                    <h4>Location</h4>
+                    <nav>
+                        <p>Zen dragoN Academy</p>
+                        <p>Isle of Berk</p>
+                        <p>Zen dragon Avenue Two</p>
+                        <p>Viking World 20125</p>
+                    </nav>
+                </div>
+                <div class="footer-contents">
+                    <h4>Contact Us</h4>
+                    <nav>
+                        <p>Email: ZendragoN@gmail.com</p>
+                        <p>Phone:(876) 1410-2024</p>
+                        <p>Mobile: 0852-2272-0141</p>
+                    </nav>
+                </div>
+    
+                <div class="icons">
+                    <div class="icon-text">
+                        <a href="https://www.facebook.com/profile.php?id=61557884076966" target="_blank"><img src="Asset/facebookIcon.png"> <p>ZendragoN</p> </a>
+                        <a class="foot-img" href="https://www.facebook.com/profile.php?id=61557884076966" target="_blank"><img src="Asset/facebookIcon.png"></a>
+                    </div>
+                    <div class="icon-text">
+                        <a href="https://www.instagram.com/zendragonacademy?igsh=eGlrMGh4cXhlNmU=" target="_blank"><img src="Asset/instagramIcon.png"> <p>ZendragoN</p> </a>
+                        <a class="foot-img" href="https://www.instagram.com/zendragonacademy?igsh=eGlrMGh4cXhlNmU=" target="_blank"><img src="Asset/instagramIcon.png"></a>
+                    </div>
+                    <div class="icon-text">
+                        <a href=""><img src="Asset/xIcon.png"> <p>ZendragoN</p> </a>
+                        <a class="foot-img" href=""><img src="Asset/xIcon.png"></a>
+                    </div>
+                    <div class="icon-text">
+                        <a href="https://youtube.com/@ZendragoNAcademy?si=ADXmIfjMK17eN-um" target="_blank"><img src="Asset/youtubeIcon.png"><p>ZendragoN</p> </a>
+                        <a class="foot-img" href="https://youtube.com/@ZendragoNAcademy?si=ADXmIfjMK17eN-um" target="_blank"><img src="Asset/youtubeIcon.png"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <hr>
+            <p class="cr">Copyright &copy2024 Wilson Agatha</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
