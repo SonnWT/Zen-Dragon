@@ -12,9 +12,9 @@ Welcome to **Zen Dragon** – a sleek, stylish, and responsive front-end-only we
 
 This project is built with:
 
-- **HTML5**
-- **CSS3**
-- **JavaScript (vanilla)**
+- **HTML**
+- **CSS**
+- **JavaScript**
 - Hosted using **GitHub Pages**
 
 ---
